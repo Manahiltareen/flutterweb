@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutterweb/Routes/routes.dart';
 import 'package:flutterweb/View/HomeScreens/MainHomeScreen.dart';
+import 'package:flutterweb/wave_buttons/wave_buttons.dart';
 
 void main() {
   runApp(const MyApp());
@@ -20,16 +21,17 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      // home:
+      home: MyWaveButtons()
+
       // Scaffold(body: AboutSection()),
 
         // PortfolioApp
       // PortfolioHomePage(),
       // NewHeroSectionContent(),
-      initialRoute: AppRoutes.mainScreen,
-      routes: {
-        AppRoutes.mainScreen: (context)=> Mainhomescreen(),
-      },
+      // initialRoute: AppRoutes.mainScreen,
+      // routes: {
+      //   AppRoutes.mainScreen: (context)=> Mainhomescreen(),
+      // },
     );
   }
 }
